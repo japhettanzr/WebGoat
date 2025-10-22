@@ -44,6 +44,7 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=My-WebGoat
+            -Dsonar.java.binaries=target/classes
 
       - name: Check SonarQube Quality Gate
         # This step polls SonarQube until the analysis is complete
